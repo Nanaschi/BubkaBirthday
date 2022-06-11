@@ -324,3 +324,4 @@ Received Import Request.
   path: Assets/Content/312312111.png
   artifactKey: Guid(3594362614eb3734987ea43e2d2ece51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Content/312312111.png using Guid(3594362614eb3734987ea43e2d2ece51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b62e8bf97fcd301ec00d646a85c0684') in 0.038446 seconds 
+AssetImportWorkerClient::OnTransportError - code=10054 error=An existing connection was forcibly closed by the remote host.
