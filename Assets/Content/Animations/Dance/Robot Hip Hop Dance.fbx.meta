@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 9ad65436bbb08574ab55fdefe77a7d34
+guid: 668240508e76f3e4795db76c39817663
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Snake Hip Hop Dance
+    second: Robot Hip Hop Dance
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -36,11 +36,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Snake Hip Hop Dance
+      name: Robot Hip Hop Dance
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 458
+      lastFrame: 463
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

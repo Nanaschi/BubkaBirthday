@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using _Scripts;
 using UnityEngine;
 
 public class SwitchAnimations : MonoBehaviour
@@ -10,9 +11,6 @@ public class SwitchAnimations : MonoBehaviour
 
    private void Start()
    {
-      var triggerParameters=_animator.parameters.Select
-         (parameter => parameter.type == AnimatorControllerParameterType.Trigger);
-      
-
+      _animator.SetTrigger(_animator.parameters.GetRandomElement().name);
    }
 }

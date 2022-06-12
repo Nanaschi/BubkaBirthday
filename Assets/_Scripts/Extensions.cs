@@ -10,10 +10,16 @@ namespace _Scripts
     {
 
 
-        public static object GetRandomElement<T>(this List<T> array)
+        public static T GetRandomElement<T>(this List<T> array)
         {
             var rand = new Random();
             return  array[rand.Next(array.Count)];
+        }
+        
+        public static T GetRandomElement<T>(this T[] array)
+        {
+            var rand = new Random();
+            return  array[rand.Next(array.Length)];
         }
         
     }
