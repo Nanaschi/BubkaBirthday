@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 using Zenject;
 
 namespace _Scripts.ZenjectInstallers
@@ -7,12 +8,12 @@ namespace _Scripts.ZenjectInstallers
     {
 
         [SerializeField] private SceneController _sceneController;
-        [SerializeField] private AudioController _audioController;
+        [FormerlySerializedAs("_audioController")] [SerializeField] private BaseAudioController baseAudioController;
         [SerializeField] private UIController _uiController;
         public override void InstallBindings()
         {
-            Container.BindInterfacesAndSelfTo<AudioController>().
-                FromInstance(_audioController).AsSingle();
+            Container.BindInterfacesAndSelfTo<BaseAudioController>().
+                FromInstance(baseAudioController).AsSingle();
             
             Container.Bind<UIController>().FromInstance(_uiController).AsSingle();
             
