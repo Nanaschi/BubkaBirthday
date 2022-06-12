@@ -15,22 +15,22 @@ PrefabInstance:
     - target: {fileID: 2350421741641594263, guid: 01cbab0bafebdd54894ef1df5118283a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.050459504
+      value: -0.11
       objectReference: {fileID: 0}
     - target: {fileID: 2350421741641594263, guid: 01cbab0bafebdd54894ef1df5118283a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00000011920929
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2350421741641594263, guid: 01cbab0bafebdd54894ef1df5118283a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.53097713
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 2350421741641594263, guid: 01cbab0bafebdd54894ef1df5118283a,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9544392
+      value: 0.99835396
       objectReference: {fileID: 0}
     - target: {fileID: 2350421741641594263, guid: 01cbab0bafebdd54894ef1df5118283a,
         type: 3}
@@ -40,7 +40,7 @@ PrefabInstance:
     - target: {fileID: 2350421741641594263, guid: 01cbab0bafebdd54894ef1df5118283a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.29840547
+      value: 0.05735353
       objectReference: {fileID: 0}
     - target: {fileID: 2350421741641594263, guid: 01cbab0bafebdd54894ef1df5118283a,
         type: 3}
@@ -55,7 +55,7 @@ PrefabInstance:
     - target: {fileID: 2350421741641594263, guid: 01cbab0bafebdd54894ef1df5118283a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 34.724
+      value: 6.576
       objectReference: {fileID: 0}
     - target: {fileID: 2350421741641594263, guid: 01cbab0bafebdd54894ef1df5118283a,
         type: 3}
@@ -65,7 +65,7 @@ PrefabInstance:
     - target: {fileID: 3158624994038558509, guid: 01cbab0bafebdd54894ef1df5118283a,
         type: 3}
       propertyPath: m_Name
-      value: Anna Dance
+      value: Anna Dance In The Pot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01cbab0bafebdd54894ef1df5118283a, type: 3}
@@ -85,7 +85,7 @@ Animator:
   m_GameObject: {fileID: 7855379438434780818}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1620deff49aad8b4ab289cd02e481a48, type: 2}
+  m_Controller: {fileID: 9100000, guid: c75d989088b271e42b5bff294047c79f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -95,16 +95,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4178562080826670134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7855379438434780818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d538baee72199b7478fe642586c411ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 6389052282019016417}
