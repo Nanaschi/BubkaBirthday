@@ -14,6 +14,8 @@ public class AnnaInThePotAnimationController : MonoBehaviour
     private static readonly int ChickenDance = Animator.StringToHash("ChickenDance");
     private static readonly int DanceMultiplier = Animator.StringToHash("DanceMultiplier");
 
+    
+    
     private void OnEnable()
     {
         _gornyakAudioController.OnDialogueEnded += StartDanceAnimation;
