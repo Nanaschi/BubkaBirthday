@@ -17,6 +17,11 @@ public class GornyakAudioController : BaseAudioController
    private IEnumerator WaitTillDiealogueEnds()
    {
       yield return new WaitForSeconds(AudioLegth);
+      DialogueEnded();
+   }
+
+   public void DialogueEnded()
+   {
       OnDialogueEnded?.Invoke();
    }
 }
