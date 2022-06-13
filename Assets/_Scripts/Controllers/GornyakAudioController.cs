@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using _Scripts;
@@ -5,5 +6,17 @@ using UnityEngine;
 
 public class GornyakAudioController : BaseAudioController
 {
-    
+   private float AudioLegth => _audioSource.clip.length;
+   public event Action OnDialogueEnded;
+
+   private void Start()
+   {
+      StartCoroutine(WaitTillDiealogueEnds());
+   }
+
+   private IEnumerator WaitTillDiealogueEnds()
+   {
+      yield return new WaitForSeconds(AudioLegth);
+      OnDialogueEnded?.Invoke();
+   }
 }
