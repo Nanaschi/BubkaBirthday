@@ -7,8 +7,12 @@ public class GornyakSceneInstaller : MonoInstaller
 {
     [SerializeField] private GornyakAudioController baseAudioController;
     [SerializeField] private GornyakUIController _gornyakUIController;
+    
+    
     public override void InstallBindings()
     {
+        Container.Bind<Vibrator>().AsSingle();
+        
         Container.BindInterfacesAndSelfTo<GornyakAudioController>().
             FromInstance(baseAudioController).AsSingle();
         

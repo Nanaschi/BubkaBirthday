@@ -10,7 +10,7 @@ public class AnnaInThePotAnimationController : MonoBehaviour
 
     [Inject] private GornyakAudioController _gornyakAudioController;
     [Inject] private GornyakUIController _gornyakUIController;
-    
+    [Inject] private Vibrator _vibrator;
     private static readonly int ChickenDance = Animator.StringToHash("ChickenDance");
     private static readonly int DanceMultiplier = Animator.StringToHash("DanceMultiplier");
 
@@ -32,6 +32,7 @@ public class AnnaInThePotAnimationController : MonoBehaviour
     {
         print("increase!");
         _animator.SetFloat(DanceMultiplier, _animator.GetFloat(DanceMultiplier)+ .01f);
+        _vibrator.Vibrate();
     }
 
     private void StartDanceAnimation()

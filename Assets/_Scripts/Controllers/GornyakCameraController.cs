@@ -10,14 +10,14 @@ public class GornyakCameraController : BaseCameraController
 
     [SerializeField] private CinemachineVirtualCamera _camera1;
 
-    private async void Start()
+    private void Start()
     {
-        await SwitchTheCamera();
+        StartCoroutine(SwitchTheCamera());
     }
 
-    private async Task SwitchTheCamera()
+    private IEnumerator SwitchTheCamera()
     {
-        await Task.Delay(10);
+        yield return new WaitForEndOfFrame();
         _camera1.Priority = 0;
     }
 }
