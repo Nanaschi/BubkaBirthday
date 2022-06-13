@@ -17,7 +17,10 @@ public class Vibrator
 
     public void Vibrate(int milliseconds = 250)
     {
-        if (IsAndroid()) vibrator.Call("vibrate", milliseconds);
+        if (IsAndroid())
+        {
+            vibrator.Call("vibrate", milliseconds);
+        }
         else
         {
             Handheld.Vibrate();
