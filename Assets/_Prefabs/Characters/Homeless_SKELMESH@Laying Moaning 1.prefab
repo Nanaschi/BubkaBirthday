@@ -20,22 +20,22 @@ PrefabInstance:
     - target: {fileID: 3202727065615943480, guid: 9ec63b3248a61fc488aed6b936c9775f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.06
+      value: 5.67
       objectReference: {fileID: 0}
     - target: {fileID: 3202727065615943480, guid: 9ec63b3248a61fc488aed6b936c9775f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.01
+      value: 0.00999999
       objectReference: {fileID: 0}
     - target: {fileID: 3202727065615943480, guid: 9ec63b3248a61fc488aed6b936c9775f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.92
+      value: -1.11
       objectReference: {fileID: 0}
     - target: {fileID: 3202727065615943480, guid: 9ec63b3248a61fc488aed6b936c9775f,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7405905
       objectReference: {fileID: 0}
     - target: {fileID: 3202727065615943480, guid: 9ec63b3248a61fc488aed6b936c9775f,
         type: 3}
@@ -45,7 +45,7 @@ PrefabInstance:
     - target: {fileID: 3202727065615943480, guid: 9ec63b3248a61fc488aed6b936c9775f,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.67195666
       objectReference: {fileID: 0}
     - target: {fileID: 3202727065615943480, guid: 9ec63b3248a61fc488aed6b936c9775f,
         type: 3}
@@ -60,7 +60,7 @@ PrefabInstance:
     - target: {fileID: 3202727065615943480, guid: 9ec63b3248a61fc488aed6b936c9775f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -84.437
       objectReference: {fileID: 0}
     - target: {fileID: 3202727065615943480, guid: 9ec63b3248a61fc488aed6b936c9775f,
         type: 3}
@@ -100,3 +100,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &656874992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6239971239789758242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b0606bcfe036864793e797c4b4d0c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 0.01
