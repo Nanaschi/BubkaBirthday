@@ -9,6 +9,8 @@ public class GornyakAudioController : BaseAudioController
 {
    private float AudioLegth => _audioSource.clip.length;
    public event Action OnDialogueEnded;
+
+   [SerializeField] private AudioClip _kryaClip;
    private void Start()
    {
       StartCoroutine(WaitTillDiealogueEnds());
@@ -22,6 +24,10 @@ public class GornyakAudioController : BaseAudioController
 
    public void DialogueEnded()
    {
+
       OnDialogueEnded?.Invoke();
+      _audioSource.clip = _kryaClip;
+      _audioSource.loop = true;
+      _audioSource.Play();
    }
 }
