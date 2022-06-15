@@ -6,9 +6,19 @@ public class HomelessCrawlLogic : MonoBehaviour
 {
 
     [SerializeField] private float _speed;
-    private void FixedUpdate()
+    private void Start()
     {
-        transform.Translate(Vector3.forward * _speed);
+        StartCoroutine(Crawl());
+    }
+
+    IEnumerator Crawl()
+    {
+        while (true)
+        {
+            transform.Translate(Vector3.forward * _speed);
+            yield return null;
+        }
+
     }
     
 }
