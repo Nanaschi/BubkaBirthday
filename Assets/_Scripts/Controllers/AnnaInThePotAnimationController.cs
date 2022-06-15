@@ -14,8 +14,8 @@ public class AnnaInThePotAnimationController : MonoBehaviour
     [Inject] private Vibrator _vibrator;
     private static readonly int ChickenDance = Animator.StringToHash("ChickenDance");
     private static readonly int DanceMultiplier = Animator.StringToHash("DanceMultiplier");
-
-    
+    public event Action OnHalfDanced;
+    bool crawlPossible = true;
     
     private void OnEnable()
     {
@@ -34,6 +34,13 @@ public class AnnaInThePotAnimationController : MonoBehaviour
         print("increase!");
         _animator.SetFloat(DanceMultiplier, _animator.GetFloat(DanceMultiplier)+ .01f);
         MMVibrationManager.Vibrate();
+       
+        if (_animator.GetFloat(DanceMultiplier) >= .5f && crawlPossible)
+        {
+            print("Homeless!");
+            crawlPossible = false;
+            OnHalfDanced?.Invoke();
+        }
     }
 
     private void StartDanceAnimation()
