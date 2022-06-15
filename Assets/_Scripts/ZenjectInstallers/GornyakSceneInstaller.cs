@@ -11,8 +11,7 @@ public class GornyakSceneInstaller : MonoInstaller
     
     public override void InstallBindings()
     {
-        Container.Bind<Vibrator>().AsSingle();
-        
+
         Container.BindInterfacesAndSelfTo<GornyakAudioController>().
             FromInstance(baseAudioController).AsSingle();
         

@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gornyak.unity
     guid: 594e9ba59069dbe4cb566c965426d55a
+  - enabled: 1
+    path: Assets/Scenes/EndMenu.unity
+    guid: 9de66454f4b8093479a024af70a46157
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 695007884ae622f4f938f4c9b73cb2e0,
       type: 2}

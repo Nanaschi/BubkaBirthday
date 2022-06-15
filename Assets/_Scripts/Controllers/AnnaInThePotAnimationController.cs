@@ -11,10 +11,10 @@ public class AnnaInThePotAnimationController : MonoBehaviour
 
     [Inject] private GornyakAudioController _gornyakAudioController;
     [Inject] private GornyakUIController _gornyakUIController;
-    [Inject] private Vibrator _vibrator;
     private static readonly int ChickenDance = Animator.StringToHash("ChickenDance");
     private static readonly int DanceMultiplier = Animator.StringToHash("DanceMultiplier");
     public event Action OnHalfDanced;
+    public event Action OnDanceFinished;
     bool crawlPossible = true;
     
     private void OnEnable()
@@ -41,9 +41,9 @@ public class AnnaInThePotAnimationController : MonoBehaviour
             OnHalfDanced?.Invoke();
         }
 
-        if (_animator.GetFloat(DanceMultiplier) >= .3f && crawlPossible)
+        if (_animator.GetFloat(DanceMultiplier) >= .99f)
         {
-            
+            OnDanceFinished?.Invoke();
         }
     }
 
