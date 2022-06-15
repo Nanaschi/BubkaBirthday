@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using MoreMountains.NiceVibrations;
 using UnityEngine;
 using Zenject;
 
@@ -32,7 +33,7 @@ public class AnnaInThePotAnimationController : MonoBehaviour
     {
         print("increase!");
         _animator.SetFloat(DanceMultiplier, _animator.GetFloat(DanceMultiplier)+ .01f);
-        _vibrator.Vibrate();
+        MMVibrationManager.Vibrate();
     }
 
     private void StartDanceAnimation()
