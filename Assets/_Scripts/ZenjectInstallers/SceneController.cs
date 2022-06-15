@@ -33,5 +33,6 @@ public class SceneController: MonoBehaviour
     private void ExitApplication()
     {
         Application.Quit();
+        print("exit");
     }
 }
