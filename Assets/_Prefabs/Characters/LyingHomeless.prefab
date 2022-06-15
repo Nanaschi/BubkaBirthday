@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 2826448436476321154, guid: 9ec63b3248a61fc488aed6b936c9775f,
         type: 3}
       propertyPath: m_Name
-      value: Homeless_SKELMESH@Laying Moaning 1
+      value: Homeless_SKELMESH@Laying Moaning 1 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3202727065615943480, guid: 9ec63b3248a61fc488aed6b936c9775f,
         type: 3}
@@ -66,6 +66,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6313064280570975487, guid: 9ec63b3248a61fc488aed6b936c9775f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec63b3248a61fc488aed6b936c9775f, type: 3}
