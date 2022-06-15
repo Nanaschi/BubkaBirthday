@@ -32,14 +32,18 @@ public class AnnaInThePotAnimationController : MonoBehaviour
     private void IncreaseAnimationSpeed()
     {
         print("increase!");
-        _animator.SetFloat(DanceMultiplier, _animator.GetFloat(DanceMultiplier)+ .01f);
+        _animator.SetFloat(DanceMultiplier, _animator.GetFloat(DanceMultiplier)+ .1f);
         MMVibrationManager.Vibrate();
        
-        if (_animator.GetFloat(DanceMultiplier) >= .5f && crawlPossible)
+        if (_animator.GetFloat(DanceMultiplier) >= .3f && crawlPossible)
         {
-            print("Homeless!");
             crawlPossible = false;
             OnHalfDanced?.Invoke();
+        }
+
+        if (_animator.GetFloat(DanceMultiplier) >= .3f && crawlPossible)
+        {
+            
         }
     }
 
